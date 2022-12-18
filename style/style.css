@@ -1,0 +1,129 @@
+/* Start variables */
+:root {
+    --main-color: #67c5ff;
+    --secondary-color: #1C315E;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
+  /* End variables */
+  /* Start Global Rules */
+  *{
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+
+  }
+    html {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      padding: 0;
+      background-color: #ffffff;
+      margin: 0;
+    }
+.container{
+    width: 76.974%;
+    margin: 0 10%;
+}
+.nav-bar{
+  max-width: 100%;
+  height: 60px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+    
+}
+.nav-bar ul{
+  list-style: none;
+}
+.nav-bar ul li{
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav-bar ul li a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  transition: .3s ease;
+}
+.nav-bar ul li a:hover{
+  color: var(--main-color);
+  transform: scale(1.05);
+}
+.nav-bar img{
+  cursor: pointer;
+  height: 100%;
+}
+/* End */
+/* Start */
+.section-first{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90px;
+}
+.section-first .img-container{
+  width: 50%;
+  height: 70%;
+}
+.section-first .img-container img{
+  max-width: 100%;
+
+}
+.section-first .info-text {
+  width: 50%;
+}
+.section-first .info-text h1{
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.section-first .info-text p{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+
+}
+.section-first .info-text button{
+  height: 50px;
+  width: 170px;
+  background-color:#ffe600;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: .4s ease;
+  transition-delay:.1s ;
+  letter-spacing: 1px;
+}
+.section-first .info-text button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;  
+  transition: .4s ease;
+}
+.section-first .info-text button:hover:before{
+  width: 100%;
+  z-index: -1;
+}
+.info-text button:hover{
+  color: white;
+  z-index: 999;
+  background-color: transparent;
+}
+@keyframes progress {
+  
+  
+}
