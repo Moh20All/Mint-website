@@ -3,4 +3,4 @@ This is website created by PSD template
 
 
 
-<a href="https://moh20all.github.io/Mint-website/"> <h1>Check website </h1> </a>
+<h1><a href="https://moh20all.github.io/Mint-website/"> Check website</a> </h1> 
