@@ -81,7 +81,8 @@
     visibility: hidden;
   }
   .info-text{
-    width: 75% !important;
+    width: 85% !important;
+    Text-align:center;
 
   }
   .info-text h1{
