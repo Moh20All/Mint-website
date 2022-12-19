@@ -74,7 +74,20 @@
 }
 .section-first .img-container img{
   max-width: 100%;
+}
+@media (max-width:768px){
+  .img-container img{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .info-text{
+    width: 70% !important;
 
+  }
+  .info-text h1{
+    font-size: 45px !important;
+  }
+  
 }
 .section-first .info-text {
   width: 50%;
@@ -87,7 +100,7 @@
 .section-first .info-text p{
   font-size: 15px;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 30px;
 
 }
 .section-first .info-text button{
@@ -103,6 +116,7 @@
   transition: .4s ease;
   transition-delay:.1s ;
   letter-spacing: 1px;
+  text-align: center;
 }
 .section-first .info-text button::before{
   content: '';
