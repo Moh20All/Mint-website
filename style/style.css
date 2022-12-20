@@ -81,13 +81,19 @@
     visibility: hidden;
   }
   .info-text{
-    width: 70% !important;
+    width: 100% !important;
 
   }
   .info-text h1{
-    font-size: 45px !important;
+    font-size: 50px !important;
   }
-  
+  .info-text p{
+    font-weight: 700 !important;
+    font-size: 20px;
+  }
+  .section-first{
+    flex-direction: column;
+  }
 }
 .section-first .info-text {
   width: 50%;
@@ -136,8 +142,4 @@
   color: white;
   z-index: 999;
   background-color: transparent;
-}
-@keyframes progress {
-  
-  
 }
