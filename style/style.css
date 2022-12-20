@@ -76,13 +76,15 @@
   max-width: 100%;
 }
 @media (max-width:768px){
-  .img-container img{
+  .img-container {
     opacity: 0;
     visibility: hidden;
+    width: 0 !important;
+    height: 0 !important;
   }
   .info-text{
     width: 100% !important;
-
+    Text-align:center;
   }
   .info-text h1{
     font-size: 50px !important;
@@ -93,6 +95,10 @@
   }
   .section-first{
     flex-direction: column;
+  }
+  .container{
+    width: 80%;
+    margin: 0 10%;
   }
 }
 .section-first .info-text {
