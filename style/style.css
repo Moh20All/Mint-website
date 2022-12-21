@@ -1,6 +1,6 @@
 /* Start variables */
 :root {
-    --main-color: #67c5ff;
+    --main-color: #ffe600;
     --secondary-color: #1C315E;
     --section-padding: 60px;
     --section-background: #f6f6f6;
@@ -86,7 +86,7 @@
     width: 100% !important;
     Text-align:center;
   }
-  .info-text h1{
+  .container h1{
     font-size: 50px !important;
   }
   .info-text p{
@@ -104,7 +104,7 @@
 .section-first .info-text {
   width: 50%;
 }
-.section-first .info-text h1{
+.container h1{
   font-size: 60px;
   font-weight: 800;
   text-transform: capitalize;
@@ -129,6 +129,7 @@
   transition-delay:.1s ;
   letter-spacing: 1px;
   text-align: center;
+  text-transform: uppercase;
 }
 .section-first .info-text button::before{
   content: '';
@@ -149,3 +150,91 @@
   z-index: 999;
   background-color: transparent;
 }
+/* Start portofolio section */
+.artwork span,.sec2 span{
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--main-duration) ease;
+  position: relative;
+  display: inline-block;
+}
+.artwork span:hover{
+background-color: var(--main-color);
+}
+.sec2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec2 i{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%,80%);  
+  animation-name: loop;
+  animation-duration: .6s ;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes loop {
+  from{
+    transform: translateY(70%);
+  }
+  to{
+    transform: translateY(100%);
+  }
+}
+.sec2 .pop {
+  list-style: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  right: 117px;
+  transition: 3s ease;
+}
+.pop li{
+  padding: 15px 30px;
+  font-weight: 600;
+  background-color: #eee;
+  cursor: pointer;
+  transition: var(--main-duration) ease;
+}
+.pop li:hover{
+  background-color: var(--main-color);
+}
+.pop ul{
+  position: relative;
+}
+.pop li:hover~.pop{
+  visibility: visible;
+}
+.sec2 ul span:hover~div.pop{
+  visibility: visible;
+  opacity: 100;
+}
+.cards-layout{
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 30px;
+  grid-auto-rows: minmax(250px,1fr);
+}
+.box{
+  background-color: #eee;
+  width: 100%;
+  height: 300px;
+  border: solid 2px black;
+  grid-row: 300px;
+}
+.cards-layout .box:nth-child(1){
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/* End portofolio section */
