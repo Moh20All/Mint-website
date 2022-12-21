@@ -115,7 +115,7 @@
   line-height: 30px;
 
 }
-.section-first .info-text button{
+.section-first .info-text button ,.work button{
   height: 50px;
   width: 170px;
   background-color:#ffe600;
@@ -131,7 +131,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-.section-first .info-text button::before{
+.section-first .info-text button::before,.work button::before{
   content: '';
   position: absolute;
   top: 0;
@@ -141,15 +141,16 @@
   background-color: black;  
   transition: .4s ease;
 }
-.section-first .info-text button:hover:before{
+.section-first .info-text button:hover:before,.work button:hover:before{
   width: 100%;
   z-index: -1;
 }
-.info-text button:hover{
+.info-text button:hover,.work button:hover{
   color: white;
   z-index: 999;
   background-color: transparent;
 }
+
 /* Start portofolio section */
 .artwork span,.sec2 span{
   padding: 10px 20px;
@@ -218,23 +219,115 @@ background-color: var(--main-color);
   opacity: 100;
 }
 .cards-layout{
-  position: relative;
-  max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  grid-gap: 30px;
-  grid-auto-rows: minmax(250px,1fr);
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
 }
 .box{
   background-color: #eee;
-  width: 100%;
-  height: 300px;
-  border: solid 2px black;
+  max-width: 100%;
+  max-height: 100%;
   grid-row: 300px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 .cards-layout .box:nth-child(1){
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row: 1 / span 3;
+  background-image: url(/imgs/pic1.png);
+  background-position: center;
+  background-size: cover;
+}
+.cards-layout .box:nth-child(2){
+  grid-row: 1 / span 5;
+  background-image: url(/imgs/pic3.png);
+  background-position: center;
+  background-size: cover;
+}
+.cards-layout .box:nth-child(3){
+  grid-row: 1 / span 3;
+  background-image: url(/imgs/pic5.png);
+  background-position: center;
+  background-size: cover;
+}
+.cards-layout .box:nth-child(4){
+  grid-row: 4 / span 5;
+  background-image: url(/imgs/pic2.png);
+  background-position: center;
+  background-size: cover;
+}
+.cards-layout .box:nth-child(5){
+  grid-row: 6 / span 3;
+  background-image: url(/imgs/pic4.png);
+  background-position: center;
+  background-size: cover;
+}
+.cards-layout .box:nth-child(6){
+  grid-row: 4 / span 5;
+  background-image: url(/imgs/pic6.png);
+  background-position: center;
+  background-size: cover;
+  background-color: var(--main-color);
+  
 }
 
+body .container:nth-child(3){
+  padding: 50px 0;
+}
+.box h1{
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+  transition: .3s ease;
+  z-index: 999;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.box h6{
+  text-align: center;
+  margin-top: 0;
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+  transition: .3s ease;
+  z-index: 999;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.box .yelow{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,230,0,.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: var(--main-duration);
+}
+.box:hover h1, .box:hover h6,.box:hover .yelow{
+  opacity: 100;
+}
+@media (max-width:768px){
+.sec2{
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.work button{
+  margin: 5% 20%;
+}
+.box h1{
+  font-size: 20px !important;
+  overflow-wrap: break-word;
+}
+.box h6{
+  font-size: 15px;
+}
+}
 /* End portofolio section */
