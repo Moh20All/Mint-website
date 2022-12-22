@@ -11,6 +11,7 @@
 * {
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
+  /* outline: solid 2px limegreen; */
 }
 html {
   scroll-behavior: smooth;
