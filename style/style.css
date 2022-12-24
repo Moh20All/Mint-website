@@ -393,7 +393,7 @@ body .container:nth-child(4) {
   .picters {
     flex-direction: column;
   }
-  .little-about-us{
+  .little-about-us {
     padding: 0 0 !important;
     margin: 0 !important;
     height: auto;
@@ -410,15 +410,90 @@ body .container:nth-child(4) {
   z-index: 999;
 }
 .imag {
-position: relative;
+  position: relative;
 }
-.imag h3{
+.imag h3 {
   margin: 0 20px;
-  font-size:20px;
+  font-size: 20px;
 }
-.imag p{
+.imag p {
   margin: 5px 15px;
   font-size: 14px;
   color: white;
 }
 /* End About-us section */
+/* start Blogs section */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 80px;
+  position: relative;
+}
+.card-container .card {
+  background-color: white;
+  transition: 0.4s ease;
+}
+.card .imge-card {
+  max-width: 100%;
+  height: 218px;
+  /* background-color: black; */
+}
+.card-container .imge-card{
+  max-width: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  object-fit: contain;
+  cursor: pointer;
+}
+.card-container .card:nth-child(1) .imge-card{
+  background-image:url(../imgs/blog1.png) ;
+}
+.card-container .card:nth-child(2) .imge-card{
+  background-image:url(../imgs/blog2.png) ;
+}
+.card-container .card:nth-child(3) .imge-card{
+  background-image:url(../imgs/blog3.png) ;
+}
+.card-container .card .info {
+  padding: 20px;
+}
+.card-container .card .info h3 {
+  margin: 10px 0;
+}
+.card-container .card .info p {
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  height: 105px;
+  overflow: hidden;
+}
+.bonus {
+  width: 100%;
+  background-color: #ececec;
+}
+.yelow1 {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color:rgba(255, 230, 0, 0.849);
+  width: 326px;
+  height: 218px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: .4s ease;
+}
+.yelow1 h2 {
+  margin: 30% 0;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.card .yelow1:hover{
+  opacity: 100;
+}
+
+/* End Blogs section */
