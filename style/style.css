@@ -12,6 +12,7 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   /* outline: solid 2px limegreen; */
+  outline: none;
 }
 html {
   scroll-behavior: smooth;
@@ -474,6 +475,7 @@ body .container:nth-child(4) {
 .bonus {
   width: 100%;
   background-color: #ececec;
+  padding: 20px 0;
 }
 .yelow1 {
   position: absolute;
@@ -497,3 +499,24 @@ body .container:nth-child(4) {
 }
 
 /* End Blogs section */
+/* start contact section */
+.inputs_form{
+  padding: 10px;
+}
+.inputs_form h2{
+  font-size: 27px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.inputs_form form input[type="text"]{
+  width: 565px;
+  height: 45px;
+  border: none;
+  background-color: #fdfdfd;
+
+
+}
+.inputs_form form input[type="text"]:focus{
+  border: 2px solid var(--main-color);
+}
+/* End contact section */
