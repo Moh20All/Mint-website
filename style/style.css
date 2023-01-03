@@ -519,4 +519,9 @@ body .container:nth-child(4) {
 .inputs_form form input[type="text"]:focus{
   border: 2px solid var(--main-color);
 }
+@media (max-width: 768px){
+  .inputs_form form input[type="text"]{
+    max-width: 100%;
+  }
+}
 /* End contact section */
