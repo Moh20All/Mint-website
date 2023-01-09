@@ -116,7 +116,6 @@ body {
   line-height: 30px;
   margin-bottom: 20px;
 }
-.section-first .info-text button,
 .work button {
   height: 50px;
   width: 170px;
@@ -516,12 +515,21 @@ body .container:nth-child(4) {
 
 
 }
-.inputs_form form input[type="text"]:focus{
+.inputs_form form input[type="text"]:focus,textarea:focus{
   border: 2px solid var(--main-color);
 }
+.inputs_form textarea {
+  width: 565px;
+  height: 150px;
+  padding: 5px 10px 5px 10px;
+  transition: 0.3s;
+  margin: 5px 5px 20px 5px;
+  outline: none;
+}
 @media (max-width: 768px){
-  .inputs_form form input[type="text"]{
+  .inputs_form form input[type="text"],textarea{
     max-width: 100%;
   }
+  
 }
 /* End contact section */
