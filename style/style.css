@@ -178,7 +178,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.sec2 i {
+.sec2 i ,.container:nth-child(9) i{
   position: absolute;
   right: 0;
   top: 0;
@@ -590,8 +590,26 @@ background-color: #1e1e1e;
   margin: 10px 0 0;
  width: 100%;
  color: white;
+ padding: 50px;
+  position: relative;
+
 }
 .container:nth-child(9) a{
   text-decoration: none;
+  color: white;
+  transition: .4s ease;
+  right: 50px;
+  position: absolute;
+  top: 80px;
+}
+.container:nth-child(9) i{
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+.container:nth-child(9) a:hover{
+  color: #ffe600;
+  
+  
 }
 /* End contact-icon section */
