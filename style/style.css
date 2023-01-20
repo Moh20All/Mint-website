@@ -609,7 +609,20 @@ background-color: #1e1e1e;
 }
 .container:nth-child(9) a:hover{
   color: #ffe600;
-  
-  
+}
+@media (max-width: 768px) {
+  .icon_section{
+    flex-direction: column;
+    height: 500px;
+  }
+  .social i{
+    margin: 0 25px;
+  }
+  .container:nth-child(9) a{
+    top: 150px;
+  }
+  .container:nth-child(9) i{
+    top: 140px;
+  }
 }
 /* End contact-icon section */
