@@ -11,7 +11,7 @@
 * {
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
-  /* outline: solid 2px limegreen; */
+  /* outline: solid 2px limegreen !important; */
   outline: none;
 }
 html {
@@ -100,6 +100,9 @@ body {
     width: 80%;
     margin: 0 10%;
   }
+  *{
+    max-width: 100% !important;
+  }
 }
 .section-first .info-text {
   width: 50%;
@@ -116,7 +119,7 @@ body {
   line-height: 30px;
   margin-bottom: 20px;
 }
-.work button {
+.work button,.info-text button {
   height: 50px;
   width: 170px;
   background-color: #ffe600;
@@ -399,6 +402,10 @@ body .container:nth-child(4) {
     height: auto;
     border: none;
   }
+  .info-div {
+    bottom: 24px !important;
+    left: 15px !important;
+  }
 }
 .info-div {
   width: 70%;
@@ -463,6 +470,7 @@ body .container:nth-child(4) {
 }
 .card-container .card .info h3 {
   margin: 10px 0;
+  text-align: center;
 }
 .card-container .card .info p {
   color: black;
@@ -501,6 +509,9 @@ body .container:nth-child(4) {
 /* start contact section */
 .inputs_form{
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .inputs_form h2{
   font-size: 27px;
@@ -512,6 +523,7 @@ body .container:nth-child(4) {
   height: 45px;
   border: none;
   background-color: #fdfdfd;
+  margin: 5px 10px;
 
 
 }
@@ -524,12 +536,62 @@ body .container:nth-child(4) {
   padding: 5px 10px 5px 10px;
   transition: 0.3s;
   margin: 5px 5px 20px 5px;
-  outline: none;
+  border: 0px;
+  background-color: #fdfdfd;
 }
 @media (max-width: 768px){
   .inputs_form form input[type="text"],textarea{
     max-width: 100%;
   }
+  .input-form-image{
+    visibility: collapse;
+  }
+  .input-form-text{
+    max-width: 100%;
+  }
   
 }
+.inputs_form img{
+  size: 60%;
+}
 /* End contact section */
+/* start contact-icon section */
+.icon_section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon_info{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+}
+.container:nth-child(8){
+  margin: 10px 10%;
+}
+.social{
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+.social i{
+  margin: 10px 40px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.social i:hover{
+  color: #ffe600;
+}
+.container:nth-child(9){
+background-color: #1e1e1e;
+  margin: 10px 0 0;
+ width: 100%;
+ color: white;
+}
+.container:nth-child(9) a{
+  text-decoration: none;
+}
+/* End contact-icon section */
